@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Baby Shower de Eli! ⚡ Temática Hércules</title>
+    <meta name="description" content="Estás cordialmente invitado al Baby Shower de Eli. Acompáñanos a celebrar la llegada de nuestro pequeño Hércules el 21 de Junio de 2026.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;400;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Envelope Overlay -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <!-- Inner Card (slides up) -->
+                <div class="envelope-card-inner">
+                    <div class="envelope-card-content">
+                        <h3>Baby Shower</h3>
+                        <h4>ELI & SERGIO</h4>
+                        <div class="envelope-card-divider"></div>
+                        <p class="envelope-card-date">21 . 06 . 2026</p>
+                        <p class="envelope-card-location">CDMX</p>
+                    </div>
+                </div>
+
+                <!-- Left Flap -->
+                <div class="flap left-flap"></div>
+                <!-- Right Flap -->
+                <div class="flap right-flap"></div>
+                
+                <!-- Bottom Flap with Monogram stamped on it -->
+                <div class="flap bottom-flap">
+                    <div class="bottom-flap-monogram">ELI</div>
+                </div>
+
+                <!-- Top Flap (rotates open in 3D) -->
+                <div class="flap top-flap">
+                    <div class="top-flap-outer"></div>
+                    <div class="top-flap-inner"></div>
+                    <!-- Wax Seal positioned at the tip of the top flap -->
+                    <div class="envelope-seal-container" id="btnOpenInvitation">
+                        <img src="assets/hercules_medallion.png" alt="Medallón Sello" class="envelope-seal-medallion">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Envelope Text below the 3D element -->
+            <div class="envelope-text">
+                <div class="envelope-tap-hint">TOCA EL SELLO PARA ABRIR</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Starry & Cloud Background Canvas/Containers -->
+    <div class="stars-container"></div>
+    <div class="clouds-bg">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="cloud cloud-4"></div>
+        <div class="cloud cloud-5"></div>
+    </div>
+
+
+
+    <!-- Main Invitation Card -->
+    <main class="invitation-container">
+        <!-- Hero Header -->
+        <header class="hero-section">
+            <div class="medallion-container">
+                <img src="assets/hercules_medallion.png" alt="Medallón de Hércules" class="floating-medallion" id="heroMedallion">
+            </div>
+            
+            <div class="title-container">
+                <span class="sub-title">¡UN NUEVO HÉROE ESTÁ EN CAMINO!</span>
+                <h1 class="main-title">Baby Shower</h1>
+                <div class="name-badge">
+                    <span class="greek-border-left"></span>
+                    <h2 class="mom-name">ELI & SERGIO</h2>
+                    <span class="greek-border-right"></span>
+                </div>
+            </div>
+
+            <!-- Animated Baby Hercules -->
+            <div class="hero-character-container">
+                <div class="character-wrapper">
+                    <!-- Sparkle effects -->
+                    <div class="sparkle s1"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="sparkle s2"><i class="fa-solid fa-star"></i></div>
+                    <div class="sparkle s3"><i class="fa-solid fa-bolt"></i></div>
+                    <img src="assets/baby_herc_lightning.png" alt="Hércules Bebé Animado" class="character-img" id="babyHerc">
+                    <div class="character-cloud"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Intro Text -->
+        <section class="intro-section card">
+            <img src="assets/sleeping_hercules.png" alt="Hércules Durmiendo" class="card-corner-sticker top-right">
+            <p class="intro-text">
+                "Un campeón no se define por su fuerza, sino por la fuerza de su corazón." Acompáñanos a celebrar la futura llegada de nuestro pequeño campeón. ¡Tu presencia hará este día aún más mágico!
+        </section>
+
+        <!-- Parents Section -->
+        <section class="parents-section card">
+            <h3 class="section-title"><i class="fa-solid fa-heart gold-text"></i> Los Futuros Papás</h3>
+            <div class="parents-photo-wrapper">
+                <img src="assets/parents.png" alt="Los Futuros Papás" class="parents-img">
+            </div>
+            <p class="parents-quote">
+                "¡Estamos listos para recibir a nuestro pequeño héroe con todo el amor del mundo!"
+            </p>
+            <p class="parents-names">Cynthia Elizabeth Ruiz Oliva & Sergio Jovani Coronado Navidad</p>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section card">
+            <div class="card-header-with-sticker">
+                <img src="assets/riding_peg_top.png" alt="Pegasus Riding" class="card-title-sticker">
+                <h3 class="section-title"><i class="fa-solid fa-hourglass-half gold-text"></i> El gran día se acerca</h3>
+            </div>
+            <div class="countdown-grid">
+                <div class="countdown-item">
+                    <span class="number" id="days">00</span>
+                    <span class="label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Min</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">Seg</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Baby's First Ultrasound Photo -->
+        <section class="photo-section card">
+            <h3 class="section-title"><i class="fa-solid fa-baby gold-text"></i> El Primer Retrato</h3>
+            <p class="photo-intro">
+                "Desde el primer instante supimos que serías nuestro campeón más fuerte." ¡Te compartimos la primera foto de nuestro pequeño!
+            </p>
+            <div class="photo-frame">
+                <img src="assets/ultrasound.jpg" alt="Primer Ultrasonido del Bebé" class="ultrasound-img">
+            </div>
+            <p class="photo-caption">2 Trimestre • Baby Hércules</p>
+        </section>
+
+        <!-- Event Details -->
+        <section class="details-section card">
+            <img src="assets/baby_hercules_column.png" alt="Column Lifting" class="card-corner-sticker bottom-right-column">
+            <h3 class="section-title"><i class="fa-solid fa-calendar-check gold-text"></i> Detalles del Evento</h3>
+            
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="detail-info">
+                        <h4>Fecha</h4>
+                        <p>Domingo, 21 de Junio de 2026</p>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="detail-info">
+                        <h4>Hora</h4>
+                        <p>14:00 hrs (2:00 PM)</p>
+                    </div>
+                </div>
+
+                <div class="detail-item full-width">
+                    <div class="detail-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <div class="detail-info">
+                        <h4>Lugar</h4>
+                        <p>Calz Legaria 172, Legaria, Miguel Hidalgo, 11280 Ciudad de México, CDMX</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map View Container -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.247291127027!2d-99.1969472!3d19.4448888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f81014e7a83d%3A0xc00f074d0e6c4ea5!2sCalz.%20Legaria%20172%2C%20Legaria%2C%20Miguel%20Hidalgo%2C%2011280%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1716912000000!5m2!1ses-419!2smx" 
+                    width="100%" 
+                    height="200" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <a href="https://maps.google.com/?q=Calz+Legaria+172,+Legaria,+Miguel+Hidalgo,+11280+Ciudad+de+M%C3%A9xico,+CDMX" target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-route"></i> Cómo llegar (Google Maps)
+            </a>
+        </section>
+
+        <!-- Gift Registry Section -->
+        <section class="gift-section card">
+            <img src="assets/baby_herc_pegasus_hug.png" alt="Hércules y Pegaso" class="card-corner-sticker top-right-hug">
+            <h3 class="section-title"><i class="fa-solid fa-gift gold-text"></i> Mesa de Regalos</h3>
+            <p class="gift-intro">
+                Tu presencia es nuestro mayor regalo, pero si deseas tener un detalle con nuestro pequeño campeón, te dejamos algunas sugerencias:
+            </p>
+            <div class="gift-options">
+                <div class="gift-card">
+                    <i class="fa-solid fa-baby gift-icon"></i>
+                    <h4>Sugerencia de Regalos</h4>
+                    <p>Ropa de 0-6 meses, pañales (Etapa 1 y 2), y accesorios para bebé.</p>
+                </div>
+                <div class="gift-card">
+                    <i class="fa-solid fa-store gift-icon"></i>
+                    <h4>Mesa en Liverpool</h4>
+                    <p>Código del evento: <strong>50482931</strong> (Ejemplo)</p>
+                    <a href="https://mesaderegados.liverpool.com.mx/" target="_blank" class="btn btn-secondary btn-sm">
+                        Ver Mesa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>¡Esperamos compartir esta gran aventura contigo!</p>
+            <div class="footer-decorations">
+                <img src="assets/baby_hercules_column.png" alt="Hércules Column" class="footer-sticker left">
+                <img src="assets/circular_hugging_peg.png" alt="Pegasus Circle" class="footer-sticker center">
+                <img src="assets/baby_herc_pegasus_cloud_bottom.png" alt="Hércules Pegasus Cloud" class="footer-sticker right">
+            </div>
+            <p class="copyright">&copy; 2026 Baby Shower de Eli | Temática inspirada en Disney's Hercules</p>
+        </footer>
+    </main>
+
+    <!-- Background Audio Element -->
+    <audio id="bgAudio">
+        <source src="assets/hijo_del_corazon.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Music Player Controller -->
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle-btn" id="musicToggle" aria-label="Reproducir música de fondo">
+            <i class="fa-solid fa-music" id="musicIcon"></i>
+            <span class="music-wave" id="musicWave">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+        <div class="music-tooltip" id="musicTooltip">
+            <span>Escuchar canción cuna <i class="fa-solid fa-baby gold-text"></i></span>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
